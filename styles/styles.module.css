@@ -1,9 +1,13 @@
 .container {
     min-height: 100vh;
-    padding: 0.5rem;
+    padding: 2rem 1rem;
     display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -11,7 +15,7 @@
     font-family: 'Roboto Regular', Times, serif;
     margin: 0;
     line-height: 1.15;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #424242;
 }
 
@@ -29,6 +33,10 @@
 
 .grid {
     display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
@@ -42,18 +50,28 @@
 
 .card {
     display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 4rem;
     margin: 0;
     padding: 1.1rem 1rem;
     text-align: left;
     color: #9E9E9E;
-
     text-decoration: none;
     border: 1px solid #E0E0E0;
     border-radius: 10px;
     transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.active {
+    color: #ffffff;
+    background-color: #3F51B5;
+    border: 1px solid #3F51B5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .card:hover,

@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.section {
+    cursor: pointer;
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    justify-content: center;
+    align-items: center;
+}
+
+.section h3 {
+    text-transform: uppercase;
+    font-family: 'Roboto Light', Times, serif;
+    color: #9E9E9E;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+
+.active h3 {
+    font-family: 'Roboto Medium', Times, serif;
+    color: #3F51B5;
+}
+
+.slider__dots {
+    display: flex;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    flex-direction: row;
+}
+.slider__dot {
+    display: block;
+    margin: 0 0.5rem;
+    width: .4rem;
+    height: .4rem;
+    background: #E0E0E0;
+    border-radius: 100px;
+}
+
+.slider__indicator {
+    background: #3F51B5;
+    transform: scale(1.5);
+}
