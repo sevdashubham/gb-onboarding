@@ -6,6 +6,8 @@
     display: -ms-flexbox; /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Chrome */
     flex-direction: column;
+    min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    min-height: calc(var(--vh, 1vh) * 100);
     justify-content: space-between;
     align-items: center;
 }
